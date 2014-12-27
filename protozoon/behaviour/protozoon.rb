@@ -5,7 +5,7 @@ module Protozoon
   end
 
   def divide
-    return self if age < 1.minute
+    return self if age < Cell::MATURITY_AGE
     self.division_strategy
   end
 

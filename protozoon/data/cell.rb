@@ -1,6 +1,7 @@
 class Cell
   FACTOR_PRODUCTION_VELOCITY = 0.5
   FACTOR_TRANSFER_VELOCITY = 0.1
+  MATURITY_AGE = 10.seconds
 
   attr_accessor :x
   attr_accessor :has_eye
@@ -10,7 +11,6 @@ class Cell
   def initialize x, has_eye
     @x = x
     @has_eye = has_eye
-    @age = 0.seconds
     @birth_date = Time.now
   end
 
